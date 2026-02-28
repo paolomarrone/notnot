@@ -1,19 +1,39 @@
-# README
+# notnot
 
-## About
+`notnot` is a minimal, open source, local-first note taking app built with Wails.
 
-This is the official Wails Vanilla template.
+The project is markdown-file based and desktop-first. Notes live in a plain folder-based vault, with a compact UI designed for dense navigation and editing.
 
-You can configure the project by editing `wails.json`. More information about the project settings can be found
-here: https://wails.io/docs/reference/project-config
+## Current Status
 
-## Live Development
+The current build includes:
 
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
+- a real filesystem-backed test vault
+- a file tree sidebar
+- note tabs
+- a single-pane edit/preview workflow
+- a settings page
+- light and dark themes
 
-## Building
+The app currently boots against the local [`test-vault/`](/home/lallero/projects/notnot/test-vault) directory during development.
 
-To build a redistributable, production mode package, use `wails build`.
+## Development
+
+Run the app in development mode:
+
+```bash
+wails dev
+```
+
+Build the frontend only:
+
+```bash
+cd frontend
+npm run build
+```
+
+Build the desktop app:
+
+```bash
+wails build
+```

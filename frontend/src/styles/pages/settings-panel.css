@@ -1,0 +1,44 @@
+.settings-panel__header {
+    padding: 0.15rem 0 0.55rem;
+}
+
+.settings-panel__title {
+    margin: 0.15rem 0 0;
+    font-size: clamp(1.15rem, 2vw, 1.7rem);
+    line-height: 1.1;
+}
+
+.settings-panel__copy {
+    max-width: 52rem;
+    margin: 0.35rem 0 0;
+    color: var(--text-soft);
+    font-size: 0.8rem;
+}
+
+.settings-group {
+    width: 100%;
+    padding: 0.5rem;
+    display: grid;
+    gap: 0.12rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    border: 1px solid var(--line);
+    background: var(--bg-muted);
+}
+
+.settings-group + .settings-group {
+    margin-top: 0.35rem;
+}
+
+.settings-group__label {
+    color: var(--text-soft);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.settings-group__value {
+    color: var(--text-soft);
+    font-size: 0.74rem;
+}

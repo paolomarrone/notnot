@@ -1,0 +1,84 @@
+.hero {
+    padding: 0.15rem 0 0.55rem;
+}
+
+.hero__eyebrow {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+}
+
+.hero__title {
+    margin: 0.15rem 0 0;
+    font-size: clamp(1.15rem, 2vw, 1.7rem);
+    line-height: 1.1;
+}
+
+.hero__copy {
+    max-width: 52rem;
+    margin: 0.35rem 0 0;
+    color: var(--text-soft);
+    font-size: 0.8rem;
+}
+
+.panel-section + .panel-section {
+    margin-top: 0.65rem;
+}
+
+.panel-section__title {
+    margin-bottom: 0.35rem;
+    font-size: 0.84rem;
+    font-weight: 800;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem;
+}
+
+.list-panel {
+    gap: 0.25rem;
+}
+
+.card,
+.list-row {
+    width: 100%;
+    padding: 0.5rem;
+    display: grid;
+    gap: 0.12rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    border: 1px solid var(--line);
+    background: var(--bg-muted);
+    cursor: pointer;
+}
+
+.card:hover,
+.card:focus-visible,
+.list-row:hover,
+.list-row:focus-visible {
+    border-color: var(--line-strong);
+    background: var(--accent-soft);
+    outline: none;
+}
+
+.card__eyebrow,
+.card__meta,
+.list-row__meta {
+    color: var(--text-soft);
+    font-size: 0.74rem;
+}
+
+.card__title,
+.list-row__title {
+    font-weight: 800;
+}
+
+@media (max-width: 720px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
